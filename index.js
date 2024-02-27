@@ -49,10 +49,14 @@ const displayQuoteList = (quotes) => {
         console.log(qoute);
         firstButton.classList.add('hidden');
         secondButton.classList.remove('hidden')
+        const hr = document.createElement('hr');
+        hr.classList.add('border-1');
+        hr.classList.add('border-[#BBBBBB]')
         const p = document.createElement('p');
         p.classList.add('font-bold')
         p.innerText = qoute.text
         qouteList.appendChild(p);
+        qouteList.appendChild(hr)
     });
 }
 
