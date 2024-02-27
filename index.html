@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- font awesome icon links -->
+    <script src="https://kit.fontawesome.com/5f1b7c5ffc.js" crossorigin="anonymous"></script>
+
+    <!-- daisy ui and tailwind links  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="max-w-[800px] mx-auto">
+
+    <main class="p-5">
+        <section>
+            <div class="flex justify-between items-center bg-[#FEFCE8] rounded-xl my-6 py-2 px-5">
+                <i class="fa-solid fa-quote-left lg:text-5xl"></i>
+                <p class="text-xl font-medium lg:text-3xl lg:font-semibold">Generate a random <span
+                        class="text-rose-400">quotes
+                        <span class="font-bold">!!!</span></span></p>
+                <i class="fa-solid  fa-quote-right  lg:text-5xl"></i>
+            </div>
+        </section>
+
+        <section>
+            <div class="text-center space-y-5">
+                <div class="flex justify-center items-center gap-3">
+                    <i class="fa-brands fa-teamspeak text-3xl"></i>
+                    <p class="text-3xl font-bold">Kanye.rest</p>
+                </div>
+                <div>
+                    <p>A free REST API for random Kanye West quotes (Kanye as a Service)</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+
+            <div class="flex justify-between my-10 p-5">
+                <a href="https://api.kanye.rest">https://api.kanye.rest</a>
+                <button onclick="loadQoutes()"><i
+                        class="fa-solid fa-arrows-rotate bg-[#00A6ED] rounded-full text-white p-1"></i><span
+                        class="ml-1">Refresh</span></button>
+            </div>
+
+            </div>
+
+        </section>
+
+        <section class="">
+            <div id="quote-container"
+                class="artboard p-5 artboard-horizontal min-h-20 rounded-2xl shadow bg-[#F0F0F0] ">
+            </div>
+        </section>
+
+        <section onclick="anchorLink()" class="my-10">
+            <div class="flex bg-[#F0F0F0] rounded-xl">
+                <img class="rounded-l-lg w-3/12" src="Images/cfae0bcc9eeb2652dd375b40461352efdb6057ba.jpeg" alt="">
+                <div class="w-full flex flex-col justify-between p-5">
+                    <div>
+                        <a target="_blank"
+                            href="https://stock.adobe.com/?clickref=1011lyiKndGC&mv=affiliate&mv2=pz&as_camptype=&as_channel=affiliate&as_source=partnerize&as_campaign=buysellads">Get
+                            10 Free Images From Adove Stock. Start Now.</a>
+                    </div>
+                    <div class="text-end">
+                        <p>ads bia carbon</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div id="quote-list-container"
+                class="artboard p-5 artboard-horizontal min-h-20 rounded-2xl shadow bg-[#F0F0F0] ">
+
+                <button id="first-button" onclick="quoteList()" class="flex gap-3 items-center">
+                    <i class="fa-solid text-blue-500 fa-right-long"></i>
+                    <p class="font-medium">Quotes List</p>
+                </button>
+                <button id="second-button" onclick="hideQuotesList()" class="flex gap-3 items-center hidden">
+                    <i class="fa-solid text-blue-500  fa-down-long"></i>
+                    <p class="font-medium">Quotes List</p>
+                </button>
+
+                <div id="quote-list">
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
